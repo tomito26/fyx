@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,400;1,700;1,900&family=Luckiest+Guy&family=Poppins:ital,wght@0,600;0,700;0,900;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f4f4;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.signup{
+    height: 85vh;
+    width: 1000px;
+    background-color: #fff;
+    display: flex;
+
+}
+.overlay-image{
+    height: 100%;
+    width: 50%;
+    
+}
+.overlay-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.signup-details{
+    padding: 20px;
+    height: 100%;
+    width: 50%;
+}
+.signup-details a .fas{
+    color: #000;
+    font-size: 18px; 
+      
+}
+.signup-details h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 30px;
+    text-transform: capitalize;
+}
+/* .signup-info{ */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+.account-icons p{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.account-icons p:first-child{
+    margin-bottom: 20px;
+}
+.account-icons p:last-child{
+    margin-bottom: 20px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly; 
+
+}
+.image{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #fca311;
+    padding: 5px;
+    border-radius: 40px;
+
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.form p{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.form-control{
+    padding: 10px 0 10px 22px;
+    width: 400px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid rgb(53, 53, 53);
+}
+.form-control::placeholder{
+    font-size: 15px;
+    
+}
+.button{
+    margin-top: 30px;
+}
+.btn{
+    padding: 10px 175px;
+    background-color: #fca311;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.signup-link{
+    margin-top: 30px;
+    font-size: 15px;
+}
+.link{
+    text-decoration: none;
+    margin-left: 5px;
+    text-transform: capitalize;
+    font-size: 15px;
+    color: rgb(238, 41, 41);
+
+}
