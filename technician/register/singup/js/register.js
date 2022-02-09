@@ -21,7 +21,7 @@ form.addEventListener("submit",(e)=>{
         let user = new User(name,email,userPassword);
         users.push(user)
         sessionStorage.setItem("user",JSON.stringify(user))
-        location.href="/customer/register/signin/login.html"
+        location.href="/technician/register/signin/login.html"
     }
     console.log(users)
     
