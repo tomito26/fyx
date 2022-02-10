@@ -510,3 +510,152 @@ iframe{
     border-radius: 8px;
     font-size: 18px;
 }
+/* profile */
+.profile{
+    margin-top: 20px;
+    box-shadow: 0 3px 5px 0   rgba(0,0,0,0.25);
+    height: 89%;
+    border-radius: 5px;
+    padding: 15px;
+}
+.profile-header{
+    display: flex;
+    justify-content: space-between;
+}
+.profile-header i{
+    cursor: pointer;
+}
+
+.profile-header h2{
+    font-weight: 400;
+    font-family: "Roboto",sans-serif;
+    text-transform: capitalize;
+    font-size: 26px;
+    
+}
+
+.profile-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.profile-form .profile-logo{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+.profile-form .profile-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.profile-form form .technician-name,.location,.password{
+    display: flex;
+
+}
+.profile-form form .form-group{
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 10px; */
+}
+.profile-form form .form-group label{
+    font-size: 14px;
+    color: #646161;
+    font-family: "Roboto",sans-serif;
+}
+.profile-form form .form-control{
+    border: none;
+    background-color: #eee;
+    padding:3px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Roboto",sans-serif;
+    outline: none;
+}
+.profile-form form .technician-name .form-control{
+    width: 140px;
+    margin-bottom: 20px;
+   
+}
+.profile-form form .technician-name .form-group:last-child{
+    margin-left: 30px;
+}
+.profile-form form .location ,#email,.password{
+    margin-bottom: 20px;
+}
+.profile-form form .location .form-control{
+    width: 140px;
+}
+.profile-form form .location .form-group:nth-child(2){
+    margin-left: 30px;
+}
+.profile-form form .location .form-group:last-child{
+    margin-left: 30px;
+}
+#email{
+    width: 310px;
+}
+.profile-form form .password .form-control{
+    width: 140px;
+}
+.profile-form form .password .form-group:last-child{
+    margin-left: 30px;
+}
+.profile-form form .submit-btn{
+    display: flex;
+    justify-content: center;
+}
+.submit-btn .btn{
+    padding: 2px 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: #fca311;
+    color: #fff;
+    font-size: 15px;
+}
+.profile-form form .form-input{
+    position: relative;
+}
+.profile-form form .form-input i {
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    cursor: pointer;
+}
+.profile-form form  .email .form-input i{
+    top: 10%;
+    right: 38%;
+}
+
+/* notifications */
+.notifications{
+    margin-top: 20px;
+}
+.notifications-header{
+    background-color: #eee;
+    width: 300px;
+    padding:6px;
+    border-radius: 14px;
+    box-shadow: 0 3px 5px 0   rgba(0,0,0,0.25);
+}
+.notifications-header h2{
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+
+}
+.notifications-container{
+    margin-top: 20px;
+    height: 457px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.notifications-container i{
+    font-size: 200px;
+    color: #ecc483;
+}

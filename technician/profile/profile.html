@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e839c1dae4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/technician.css">
     <title>Document</title>
 </head>
@@ -20,7 +20,7 @@
                 <ul class="nav-links">
                     <li class="nav-link active"><a href="profile.html"><i class="fas fa-user-circle"></i>Profile</a></li>
                     <li class="nav-link"><a href="#jobdashboard"><i class="fas fa-th-large"></i>Job Dashboard</a></li>
-                    <li class="nav-link"><a href="bookservice.html"><i class="fas fa-bell"></i></i>Notifications</a></li>               
+                    <li class="nav-link"><a href="../notifications/notifications.html"><i class="fas fa-bell"></i></i>Notifications</a></li>               
                     <li class="nav-link"><a href="../wallet/wallet.html"><i class="fas fa-wallet"></i></i>Wallet</a></li>
                     <li class="nav-link"><a href="#policy"><i class="fas fa-file-contract"></i>FYX policy</a></li>
                     <li class="nav-link"><a href="../technician.html"><i class="fas fa-home"></i>Home</a></li>
@@ -40,6 +40,79 @@
                 </div>
                 <div class="user">
                     <h3><a href="#profile"><i class="fas fa-user-circle"></i>Hi,Fundi</a></h3>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="profile-header">
+                    <h2>Edit profile</h2>
+                    <i class="fas fa-window-close"></i>
+                </div>
+                <div class="profile-form">
+                    <div class="profile-logo">
+                        <img src="/images/profile.png" alt="">
+                    </div>
+                    <form>
+                        <div class="technician-name">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" name="firstName" class="form-control" value="Fundi">
+                            </div>
+                            <div class="form-group">
+                                <label for="surname">Surname</label>
+                                <input type="text" name="surname" id="surname" value="Technician" class="form-control">
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <div class="form-input">
+                                    <input type="tel" name="phone" id="phone" class="form-control" value="0700505038">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <div class="form-input">
+                                    <input type="text" name="location" id="location" class="form-control" value="Nairobi">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="area">Area</label>
+                                <div class="form-input">
+                                    <input type="text" name="area" id="area"  value="Langata" class="form-control">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group email">
+                            <label for="email">Email</label>
+                            <div class="form-input">
+                                <input type="email" name="email" id="email" class="form-control" value="funditechnician@gmail.com">
+                                <i class="fas fa-pencil-alt"></i>
+                            </div>
+                        </div>
+                        <div class="password">
+                            <div class="form-group">
+                                <label for="pasword">Password</label>
+                                <div class="form-input">
+                                    <input type="password" name="password" id="password" value="1234567890" class="form-control">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <div class="form-input">
+                                    <input type="password" name="confirmPassword" id="confirmPassword" class="form-control" value="1234567890">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-btn">
+                            <button class="btn">Update</button>
+                        </div>
+                    </form>
+
                 </div>
             </div>
         </div>
