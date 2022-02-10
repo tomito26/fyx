@@ -690,6 +690,10 @@ nav{
     text-align: center;
     font-weight: 400;
 }
+.job-links .activatedLink{
+    background-color: #fca311;
+    font-weight: 500;
+}
 
 .job-wrapper{
     background-color: #eee;
