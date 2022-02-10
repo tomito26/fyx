@@ -412,7 +412,7 @@ nav{
     border-bottom-right-radius: 1px ;
 }
 
-iframe{
+.graph iframe{
     height: 240px;
     width: 100%;
     /* padding: 3px; */
@@ -658,4 +658,80 @@ iframe{
 .notifications-container i{
     font-size: 200px;
     color: #ecc483;
+}
+
+/* jobs page */
+.jobs{
+    margin-right: 20px;
+}
+.job-links{
+    margin: 30px 0;
+
+}
+.job-links ul{
+    display: block;
+}
+.job-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+.job-links ul li:first-child{
+    margin-left: 0;
+}
+.job-links ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    box-shadow: 0 3px 5px 0   rgba(0,0,0,0.25);
+    padding: 5px 16px;
+    border-radius: 14px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.job-wrapper{
+    background-color: #eee;
+    width: 755px;
+    height: 455px;
+    border-radius: 5px;
+
+}
+.job-wrapper iframe{
+    height: 100%;
+    width: 100%;
+}
+/* // new Job  */
+.job-image {
+    background-image: linear-gradient(rgba(238,238,238,0.5),rgba(238,238,238,0.5)),url("/images/undraw_sorting_thoughts_re_fgli\ \(1\).svg");
+    height: 300px;
+    width: 350px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.job-container h3{
+    font-size: 20px;
+    font-weight: 400;
+    /* margin-top: 20px; */
+    text-align: center;
+}
+.job-container p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+   
+    
+}
+.job-container p a{
+    text-decoration: underline solid 2px #fca311;
+    color: #000;
+    
+
+}
+.job-container p a i{
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
