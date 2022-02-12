@@ -61,9 +61,9 @@ body{
 .account-icons p:first-child{
     margin-bottom: 20px;
 }
-.account-icons p:last-child{
-    margin-bottom: 20px;
-}
+/* .account-icons p:last-child{
+    /* margin-bottom: 10px; */
+/* } */
 
 .icons{
     display: flex;
@@ -131,4 +131,9 @@ body{
     font-size: 15px;
     color: rgb(238, 41, 41);
 
+}
+.warning-text{
+    color: rgb(238, 41, 41);
+    margin-top: 10px;
+    font-size: 13px;
 }
