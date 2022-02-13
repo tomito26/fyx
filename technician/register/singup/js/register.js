@@ -4,10 +4,6 @@ function User(fullname,email,password){
     this.password=password;
 }
 
-let users = []
-
-
-
 const form = document.querySelector(".createAccountForm");
 const warning =  document.querySelector(".warning-text");
 console.log(warning)
@@ -23,12 +19,10 @@ form.addEventListener("submit",(e)=>{
     if(name !== "" && email !== "" && userPassword !== "" && confirmPassword !== ""){
         if (userPassword === confirmPassword){
             let user = new User(name,email,userPassword);
-            users.push(user)
-            localStorage.setItem("user",JSON.stringify(user))
-            console.log(localStorage)
+            addUser(user)
             location.href="/technician/register/signin/login.html"
         }else{
-            warning.innerText = "The password entered doesn't match confirm password"
+            warning.innerText = "The password entered doesn't match "
         }
   
     }else{
@@ -38,4 +32,12 @@ form.addEventListener("submit",(e)=>{
     
 })
 
-// const setItem = ()
+function addUser(user){
+    const users = getUsers()
+    localStorage.setItem("users",JSON.stringify([...users,user]));
+}
+
+function getUsers(){
+    const users = JSON.parse(localStorage.getItem("users"));
+    return users === null ? []:users
+}

@@ -1,8 +1,4 @@
-function getLoginDetails(){
-    let customer = sessionStorage.getItem("user")
-    console.log(customer)
-}
-getLoginDetails()
+
 
 let form = document.querySelector("#customerLogin");
 const warning = document.querySelector(".warning-text")
@@ -12,15 +8,21 @@ form.addEventListener("submit",(e)=>{
     const email = document.querySelector(".userEmail").value;
     const password = document.querySelector(".userPassword").value;
 
-    const user = localStorage.getItem("user");
-    const technician = JSON.parse(user)
-    console.log(technician)
+    const users = JSON.parse(localStorage.getItem("users"));
+    
+    console.log(users)
     if(email !== "" && password !== ""){
-        if(email === technician.email && password === technician.password){
-        location.href = "/technician/technician.html"
-        //  console.log("we have logged in")
+        const technicians = users.filter(user => user.email === email);
+        console.log(technicians)
+        if(technicians[0] !== undefined){
+            if(email === technicians[0].email && password === technicians[0].password){
+            location.href = "/technician/technician.html"
+            console.log(technicians[0].fullname)
+            }else{
+                warning.innerText = "You have entered  incorrect email or password"
+            }
         }else{
-            warning.innerText = "You have entered  incorrect email or password"
+            warning.innerText = "The email you entered does not exist"
         }
     }else{
         warning.innerText = "Please fill the details to login"
@@ -30,4 +32,4 @@ form.addEventListener("submit",(e)=>{
 
     
 })
-console.log(form)
+// console.log(form)
